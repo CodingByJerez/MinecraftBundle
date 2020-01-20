@@ -62,7 +62,7 @@ class CBJMinecraftQuery extends CBJAbstractMinecraft
         $this->port = $port ?? 25565;
         if(!$this->resolveSRV($host) || empty($this->host)){
             if(!($this->host = filter_var($host, FILTER_VALIDATE_IP) ? $host : gethostbyname($host)))
-                throw new MinecraftException("ip server minecraft not isset");
+                throw new MinecraftException($this->trans("exception.ip_not_valid"));
 
         }
 

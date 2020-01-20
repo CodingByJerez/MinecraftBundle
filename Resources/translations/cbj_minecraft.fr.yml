@@ -5,3 +5,4 @@ exception:
     any_data: Le serveur n'a renvoyé aucune donnée
     parsing_failed: JSON parsing a échoué
     var_int_too_big: Var Int trop gros
+    ip_not_valid: IP du serveur Minecraft existe pas

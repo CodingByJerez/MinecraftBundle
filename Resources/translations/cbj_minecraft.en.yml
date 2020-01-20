@@ -5,3 +5,4 @@ exception:
     any_data: Server didn't return any data
     parsing_failed: JSON parsing failed
     var_int_too_big: Var Int too big
+    ip_not_valid: ip server minecraft not isset
