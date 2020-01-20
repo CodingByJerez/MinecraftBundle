@@ -1,5 +1,5 @@
 services:
-    CodingByJerez\MinecraftBundle\Services\MinecraftQuery:
+    CodingByJerez\MinecraftBundle\Services\CBJMinecraftQuery:
         arguments:
             $translator: "@translator"
 

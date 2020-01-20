@@ -18,7 +18,7 @@ use CodingByJerez\MinecraftBundle\Model\Version;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 
-class MinecraftQuery extends CBJAbstractMinecraft
+class CBJMinecraftQuery extends CBJAbstractMinecraft
 {
     private $host;
     private $port;
