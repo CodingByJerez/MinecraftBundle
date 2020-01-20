@@ -60,8 +60,12 @@ class CBJMinecraftQuery extends CBJAbstractMinecraft
        // self::$versions = is_null(self::$versions) ? Config::getInstance()->get("version") : self::$versions;
         $this->timeout = $timeout;
         $this->port = $port ?? 25565;
-        if(!$this->resolveSRV($host) || empty($this->host))
-            $this->host = filter_var($host, FILTER_VALIDATE_IP) ? $host : gethostbyname($host);
+        if(!$this->resolveSRV($host) || empty($this->host)){
+            if(!($this->host = filter_var($host, FILTER_VALIDATE_IP) ? $host : gethostbyname($host)))
+                throw new MinecraftException("ip server minecraft not isset");
+
+        }
+
 
         return $this->connect();
     }
