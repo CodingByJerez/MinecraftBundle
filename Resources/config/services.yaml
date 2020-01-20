@@ -1,0 +1,5 @@
+services:
+    CodingByJerez\MinecraftBundle\Services\MinecraftQuery:
+        arguments:
+            $translator: "@translator"
+

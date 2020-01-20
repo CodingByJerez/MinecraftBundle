@@ -1,0 +1,7 @@
+exception:
+    failed_to_connect: "Échec de la connexion ou de la création d'un socket:"
+    timed_out: Le timed out du serveur a expiré
+    few_data: Le serveur a renvoyé trop peu de données
+    any_data: Le serveur n'a renvoyé aucune donnée
+    parsing_failed: JSON parsing a échoué
+    var_int_too_big: Var Int trop gros
