@@ -17,7 +17,6 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 class MinecraftExtension extends Extension
 {
-
     /**
      * Loads a specific configuration.
      *
