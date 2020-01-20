@@ -52,7 +52,7 @@ class CBJMinecraftQuery extends CBJAbstractMinecraft
      * @param string $host
      * @param int $port
      * @param int $timeout
-     * @return MinecraftQuery
+     * @return CBJMinecraftQuery
      * @throws MinecraftException
      */
     public function query(string $host = '127.0.0.1', int $port = 25565, int $timeout = 3): self
@@ -87,7 +87,7 @@ class CBJMinecraftQuery extends CBJAbstractMinecraft
 
 
     /**
-     * @return MinecraftQuery
+     * @return CBJMinecraftQuery
      * @throws MinecraftException
      */
     private function connect(): self
@@ -104,7 +104,7 @@ class CBJMinecraftQuery extends CBJAbstractMinecraft
 
 
     /**
-     * @return MinecraftQuery
+     * @return CBJMinecraftQuery
      * @throws MinecraftException
      */
     private function queryServer(): self
